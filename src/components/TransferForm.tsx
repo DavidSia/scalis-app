@@ -71,7 +71,7 @@ const TransferForm: React.FC<TransferFormProps> = ({ accounts }) => {
         router.refresh();
       }
     } catch (error) {
-      console.error('Error transferring funds:', error);
+      setErrorMessage('Error transferring funds:');
     }
   };
 

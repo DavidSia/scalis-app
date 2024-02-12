@@ -15,7 +15,7 @@ const getAccount = async (id: string) => {
 
     return accountsData;
   } catch (error) {
-    console.error('Error fetching user account data:', error);
+    return;
   }
 };
 

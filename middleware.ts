@@ -23,7 +23,6 @@ export function middleware(req: NextRequest) {
 
     return NextResponse.next();
   } catch (error) {
-    console.error('Failed to authenticate token:', error);
     return Response.json({ message: 'Failed to authenticate token' });
   }
 }

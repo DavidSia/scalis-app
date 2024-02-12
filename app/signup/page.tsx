@@ -44,7 +44,7 @@ export default function SignUp() {
         !account2InitialBalance
       ) {
         // Handle invalid input, display error messages to the user
-        console.error('Please fill out all required fields.');
+        setErrorMessage('Please fill out all required fields.');
         return;
       }
 
@@ -54,7 +54,7 @@ export default function SignUp() {
 
       // Handle NaN (Not-a-Number) cases for initial balance values
       if (isNaN(initialBalance1) || isNaN(initialBalance2)) {
-        console.error('Invalid initial balance values.');
+        setErrorMessage('Invalid initial balance values.');
         return;
       }
 

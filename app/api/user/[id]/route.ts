@@ -27,8 +27,6 @@ export async function GET(
 
     return Response.json({ success: true, user });
   } catch (error) {
-    console.error(error);
-
     return Response.json({
       success: false,
       error: 'An error occurred while search the user.',
